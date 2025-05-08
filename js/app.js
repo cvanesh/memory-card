@@ -8,6 +8,9 @@ document.addEventListener('DOMContentLoaded', () => {
     const playAgainBtn = document.getElementById('play-again');
     const difficultyBtns = document.querySelectorAll('.difficulty-btn');
     const themeBtns = document.querySelectorAll('.theme-btn');
+    const infoIcon = document.getElementById('info-icon');
+    const popupMenu = document.getElementById('popup-menu');
+    const popupOverlay = document.getElementById('popup-overlay');
     
     // Initialize game
     const game = new MemoryGame(gameBoard);
@@ -16,6 +19,18 @@ document.addEventListener('DOMContentLoaded', () => {
     
     // Show start modal on page load
     startModal.classList.add('active');
+    
+    // Info icon and popup menu
+    infoIcon.addEventListener('click', () => {
+        popupOverlay.classList.toggle('active');
+    });
+    
+    // Close popup when clicking outside
+    document.addEventListener('click', (e) => {
+        if (!popupMenu.contains(e.target) && e.target !== infoIcon) {
+            popupOverlay.classList.remove('active');
+        }
+    });
     
     // Theme selection
     themeBtns.forEach(btn => {
@@ -70,11 +85,13 @@ document.addEventListener('DOMContentLoaded', () => {
     
     // Restart game button
     restartBtn.addEventListener('click', () => {
+        popupOverlay.classList.remove('active');
         game.resetGame();
     });
     
     // New game button
     newGameBtn.addEventListener('click', () => {
+        popupOverlay.classList.remove('active');
         startModal.classList.add('active');
     });
     
