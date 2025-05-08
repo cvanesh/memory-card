@@ -2,7 +2,7 @@
     "name": "Cosmic Match - Memory Card Game",
     "short_name": "Cosmic Match",
     "description": "A space-themed memory card matching game",
-    "start_url": "/",
+    "start_url": "/memory-card",
     "display": "standalone",
     "background_color": "#1a1a2e",
     "theme_color": "#1a1a2e",

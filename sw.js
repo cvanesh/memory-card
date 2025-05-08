@@ -1,13 +1,13 @@
 const CACHE_NAME = 'cosmic-match-v1';
 const ASSETS = [
-    '/',
-    '/index.html',
-    '/css/style.css',
-    '/js/app.js',
-    '/js/game.js',
-    '/manifest.json',
-    '/assets/icons/icon-192.png',
-    '/assets/icons/icon-512.png'
+    '/memory-card/',
+    '/memory-card/index.html',
+    '/memory-card/css/style.css',
+    '/memory-card/js/app.js',
+    '/memory-card/js/game.js',
+    '/memory-card/manifest.json',
+    '/memory-card/assets/icons/icon-192.png',
+    '/memory-card/assets/icons/icon-512.png'
 ];
 
 // Install event - cache assets
