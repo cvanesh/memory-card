@@ -71,18 +71,18 @@ class MemoryGame {
                 text: '#ffffff'
             },
             flags: {
-                primary: '#30336b',
-                secondary: '#130f40',
-                accent: '#eb4d4b',
-                highlight: '#f0932b',
+                primary: '#2d3436',
+                secondary: '#636e72',
+                accent: '#0984e3',
+                highlight: '#00b894',
                 text: '#ffffff'
             },
             fruits: {
-                primary: '#6a2c70',
-                secondary: '#b83b5e',
-                accent: '#f08a5d',
-                highlight: '#f9ed69',
-                text: '#333333'  // Dark text for better contrast with light backgrounds
+                primary: '#2c3e50',
+                secondary: '#34495e',
+                accent: '#16a085',
+                highlight: '#f1c40f',
+                text: '#ffffff'
             },
             sports: {
                 primary: '#2d3436',
